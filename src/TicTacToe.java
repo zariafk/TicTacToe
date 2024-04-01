@@ -11,6 +11,7 @@ public class TicTacToe {
         System.out.println("Enter a position: ");
         int pos = keyboard.nextInt();
         List<Integer> player = new ArrayList<>();
+        checkPos(pos, player);
         }
 
     /* 
@@ -28,8 +29,7 @@ public class TicTacToe {
     }
     */
 
-    public static void checkPos(int pos) {
-        List<Integer> player = new ArrayList<>();
+    public static void checkPos(int pos, List<Integer> player) {
         switch (pos) {
             case 1 : 
                 player.add(1);
